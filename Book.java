@@ -1,3 +1,4 @@
+// This class represents a book in the library
 public class Book {
     private String ISBN;
     private String title;
@@ -5,16 +6,16 @@ public class Book {
     private String category;
     private double price;
 
-    // Default constructor
+    // Constructor to set default values
     public Book() {
-        this.ISBN = "";
-        this.title = "";
-        this.author = "";
-        this.category = "";
+        this.ISBN = "0000";
+        this.title = "Unknown";
+        this.author = "Unknown";
+        this.category = "Uncategorized";
         this.price = 0.0;
     }
 
-    // Parameterized constructor
+    // Constructor with parameters (used to create real books)
     public Book(String ISBN, String title, String author, String category, double price) {
         this.ISBN = ISBN;
         this.title = title;
@@ -23,26 +24,23 @@ public class Book {
         this.price = price;
     }
 
-    // Getters and Setters
-    
-    public String getAuthor() { return author; }
-    public void setAuthor(String author) { this.author = author; }
-    
-    public String getTitle() { return title; }
-    public void setTitle(String title) { this.title = title; }
-    
+    // Getter methods (used to access private variables)
     public String getISBN() { return ISBN; }
-    public void setISBN(String ISBN) { this.ISBN = ISBN; }
-        public double getPrice() { return price; }
-        public void setPrice(double price) { this.price = price; }
-
+    public String getTitle() { return title; }
+    public String getAuthor() { return author; }
     public String getCategory() { return category; }
-    public void setCategory(String category) { this.category = category; }
+    public double getPrice() { return price; }
 
-    // Display book details
-    @Override
+    // Setter methods (used to change private variables)
+    public void setISBN(String ISBN) { this.ISBN = ISBN; }
+    public void setTitle(String title) { this.title = title; }
+    public void setAuthor(String author) { this.author = author; }
+    public void setCategory(String category) { this.category = category; }
+    public void setPrice(double price) { this.price = price; }
+
+    // toString method (used to display book details)
     public String toString() {
-        return "Book[ISBN=" + ISBN + ", Title=" + title + ", Author=" + author +
-               ", Category=" + category + ", Price=" + price + "]";
+        return "Book [ISBN: " + ISBN + ", Title: " + title + ", Author: " + author +
+               ", Category: " + category + ", Price: $" + price + "]";
     }
 }
