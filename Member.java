@@ -15,7 +15,6 @@ public class Member {
         this.borrowedBooks = new ArrayList<>();
     }
 
-    // Constructor with parameters
     public Member(int memberID, String name, String membershipType) {
         this.memberID = memberID;
         this.name = name;
@@ -23,7 +22,7 @@ public class Member {
         this.borrowedBooks = new ArrayList<>();
     }
 
-    // Getters and Setters
+    // Getter and Seter
     public int getMemberID() { return memberID; }
     public String getName() { return name; }
     public String getMembershipType() { return membershipType; }
@@ -32,7 +31,7 @@ public class Member {
     public void setName(String name) { this.name = name; }
     public void setMembershipType(String membershipType) { this.membershipType = membershipType; }
 
-    // Method to borrow a book
+    // Method to borrow a bok
     public void borrowBook(Book book) {
         borrowedBooks.add(book);
         System.out.println(name + " borrowed " + book.getTitle());
