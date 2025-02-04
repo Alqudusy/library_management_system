@@ -15,7 +15,7 @@ public class Book {
         this.price = 0.0;
     }
 
-    // Constructor with parameters (used to create real books)
+    // Constructor (used to create real books)
     public Book(String ISBN, String title, String author, String category, double price) {
         this.ISBN = ISBN;
         this.title = title;
@@ -24,14 +24,14 @@ public class Book {
         this.price = price;
     }
 
-    // Getter methods (used to access private variables)
+    // Gettr methods (used to access private variables)
     public String getISBN() { return ISBN; }
     public String getTitle() { return title; }
     public String getAuthor() { return author; }
     public String getCategory() { return category; }
     public double getPrice() { return price; }
 
-    // Setter methods (used to change private variables)
+    // Seter methods (used to change private variables)
     public void setISBN(String ISBN) { this.ISBN = ISBN; }
     public void setTitle(String title) { this.title = title; }
     public void setAuthor(String author) { this.author = author; }

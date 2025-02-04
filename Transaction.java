@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-// This class records transactions
+// This class records transaction
 public class Transaction {
     private int transactionID;
     private Member member;
@@ -8,13 +8,13 @@ public class Transaction {
     private LocalDate borrowDate;
     private LocalDate returnDate;
 
-    // Constructor
+    // Constructors
     public Transaction(int transactionID, Member member, Book book) {
         this.transactionID = transactionID;
         this.member = member;
         this.book = book;
         this.borrowDate = LocalDate.now();
-        this.returnDate = borrowDate.plusWeeks(2);  // Default 2 weeks borrow time
+        this.returnDate = borrowDate.plusWeeks(2);  // Defult 2 weeks borrow time
     }
 
     // Display transaction details
