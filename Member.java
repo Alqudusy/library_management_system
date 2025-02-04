@@ -1,4 +1,4 @@
-import java.util.ArrayList;  // We need this to store multiple books
+import java.util.ArrayList;
 
 // This class represents a library member
 public class Member {

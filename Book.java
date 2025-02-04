@@ -24,21 +24,21 @@ public class Book {
         this.price = price;
     }
 
-    // Gettr methods (used to access private variables)
+    // Gettr methods
     public String getISBN() { return ISBN; }
     public String getTitle() { return title; }
     public String getAuthor() { return author; }
     public String getCategory() { return category; }
     public double getPrice() { return price; }
 
-    // Seter methods (used to change private variables)
+    // Seter methods
     public void setISBN(String ISBN) { this.ISBN = ISBN; }
     public void setTitle(String title) { this.title = title; }
     public void setAuthor(String author) { this.author = author; }
     public void setCategory(String category) { this.category = category; }
     public void setPrice(double price) { this.price = price; }
 
-    // toString method (used to display book details)
+    // toString method (used to display book details) to display the book in a string format
     public String toString() {
         return "Book [ISBN: " + ISBN + ", Title: " + title + ", Author: " + author +
                ", Category: " + category + ", Price: $" + price + "]";
